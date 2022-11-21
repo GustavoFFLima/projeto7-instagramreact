@@ -11,6 +11,7 @@ export default function Stories() {
   {imagem:"assets/img/filomoderna.svg", usuario:"filomoderna"},
   {imagem:"assets/img/memeriagourmet.svg", usuario:"memeriagourmet"}
   ];
+  
   return(
       <div class="stories">
         {stories.map((item) => <Story imagem={item.imagem} usuario={item.usuario}/>)}
