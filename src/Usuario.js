@@ -19,11 +19,17 @@ function UsuarioPagina(props){
   const [imagem, setImagem] = React.useState(props.imagem) 
 
   function editarNome() {
-    setNome(prompt("Qual é o seu nime?"))
+    let checaNome = prompt("Qual é o seu nime?")
+    if(checaNome !== "") {
+      setNome(checaNome)
+    }
   }
 
   function editarImagem() {
-    setImagem(prompt("Qual é o seu nime?"))
+    let checaImagem = prompt("Qual é o seu nime?")
+    if(checaImagem !== "") {
+      setImagem(prompt("Qual é o seu nime?"))
+    }
   }
 
   return(
